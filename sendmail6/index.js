@@ -24,7 +24,7 @@ module.exports = async function (context, req) {
   const mailOptions = {
     from: 'kffsande@outlook.com',
     to: 'kffsande@outlook.com',
-    subject: 'From vuenodemailer ' + req.body.emailSubject,
+    subject: 'Order From ' + req.body.emailAddress + " - " +req.body.emailSubject,
     text: req.body.emailBody,
     html:
       '<div><table><thead><tr><th>Product ID</th><th>Name</th></tr></thead><tbody>' +
